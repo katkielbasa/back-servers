@@ -1,0 +1,132 @@
+{
+  "id": "org-6296ba5c-6c20-11e9-a923-1681be663d3e",
+  "name": "Midnight Intelligence",
+  "server": [
+    {
+      "id": "1abccda1-e5fa-4dec-8c59-4684d7c8336e",
+      "name": "PROXSOFT",
+      "description": "Magna et cupidatat consequat consequat consequat sit pariatur occaecat id deserunt enim qui. Voluptate culpa laborum in amet officia sunt id commodo tempor amet. Sint nulla duis laborum voluptate nostrud commodo incididunt nisi et. Dolore excepteur eu elit ea ipsum nulla minim anim reprehenderit ea sunt irure commodo aute. Sit deserunt enim sunt incididunt eiusmod duis labore do dolor mollit. Reprehenderit et Lorem exercitation dolore deserunt elit nisi irure et est ad.",
+      "cpu": {
+        "count": 3,
+        "speed": "ECONOMY",
+        "coresPerSocket": 16
+      },
+      "memoryGb": 4,
+      "network": {
+        "id": "55127028-79a2-42f0-b13c-8547b069d4c5",
+        "privateIpv4": "10.0.0.1",
+        "vlanId": "55f04bec-d200-4032-9b06-cbb705c1e5d9",
+        "vlanName": "Finance"
+      },
+      "createTime": "2018-12-14T08:27:59.000Z",
+      "deployed": true,
+      "started": false,
+      "state": "NORMAL"
+    },
+    {
+      "id": "e28822e4-901b-4773-b653-6f67e1c7490a",
+      "name": "RETROTEX",
+      "description": "Qui minim commodo proident sunt magna amet. Laborum laborum elit dolore sunt ullamco aliquip magna aute qui do anim ad duis officia. Dolore et ex aute est Lorem qui qui anim minim proident veniam mollit. Sunt anim nulla excepteur ea nisi quis elit velit. Minim non deserunt laboris nostrud est ipsum aliqua cupidatat consequat et ad. Adipisicing culpa do duis anim. Aute amet aliquip sunt esse cupidatat ut.",
+      "cpu": {
+        "count": 1,
+        "speed": "HIGHPERFORMANCE",
+        "coresPerSocket": 16
+      },
+      "memoryGb": 16,
+      "network": {
+        "id": "dcc390c6-b983-4927-bf53-c8076d21e544",
+        "privateIpv4": "10.0.0.1",
+        "vlanId": "d1c112e4-f8f8-40a8-a0b4-99d31d594a6e",
+        "vlanName": "IT"
+      },
+      "createTime": "2019-04-16T20:44:20.000Z",
+      "deployed": false,
+      "started": true,
+      "state": "FAILED"
+    },
+    {
+      "id": "e8b184ad-581b-4357-bd20-bd3906c09e69",
+      "name": "AEORA",
+      "description": "Id nulla excepteur cupidatat dolor sit eiusmod adipisicing incididunt ad ullamco ut amet in do. Sit est exercitation occaecat laboris id sunt adipisicing. Est eu amet incididunt incididunt minim et. Fugiat ea reprehenderit fugiat duis commodo laborum qui officia tempor et. Sint dolor elit elit aliqua laboris. Velit elit labore duis mollit est ipsum aliquip. Occaecat nulla ipsum minim exercitation.",
+      "cpu": {
+        "count": 2,
+        "speed": "ECONOMY",
+        "coresPerSocket": 16
+      },
+      "memoryGb": 16,
+      "network": {
+        "id": "64066264-e27d-4ae7-9e08-5454d0004ce7",
+        "privateIpv4": "10.0.0.1",
+        "vlanId": "9feedf45-9d43-4324-87bc-40bd7c1bcc5b",
+        "vlanName": "IT"
+      },
+      "createTime": "2019-04-30T12:48:55.000Z",
+      "deployed": false,
+      "started": false,
+      "state": "PENDING_CHANGE"
+    },
+    {
+      "id": "c48a6abd-944d-4f7a-8e19-570b695d3636",
+      "name": "INTERODEO",
+      "description": "Amet voluptate consectetur reprehenderit elit eiusmod nulla mollit non sunt. Exercitation do deserunt magna ipsum labore do duis amet sit consequat incididunt. Enim elit anim Lorem qui reprehenderit esse exercitation officia laboris reprehenderit duis labore aliquip fugiat. Anim sint in duis ut cupidatat et. Consectetur in sit dolore ut magna excepteur duis Lorem Lorem. Velit consectetur pariatur consectetur officia commodo adipisicing. Minim ipsum sit deserunt irure occaecat irure proident adipisicing ad.",
+      "cpu": {
+        "count": 2,
+        "speed": "ECONOMY",
+        "coresPerSocket": 8
+      },
+      "memoryGb": 64,
+      "network": {
+        "id": "b779b984-ff47-4a38-9d41-6991c713504e",
+        "privateIpv4": "10.0.0.1",
+        "vlanId": "3d85ea1f-fe04-4a69-b04b-c070eb6fad52",
+        "vlanName": "IT"
+      },
+      "createTime": "2018-12-11T15:18:50.000Z",
+      "deployed": false,
+      "started": false,
+      "state": "NORMAL"
+    },
+    {
+      "id": "979e5ac4-1e76-47d4-b0bd-b62a96fb6c37",
+      "name": "TROLLERY",
+      "description": "In commodo aliquip veniam velit exercitation eu consectetur anim reprehenderit occaecat ut. Do minim labore quis aliquip et id est irure. Voluptate eiusmod qui consequat et. Laborum eiusmod exercitation laboris laboris occaecat ipsum irure do aute eiusmod incididunt. Ea est adipisicing ut laboris. Consectetur minim ea proident labore laboris aute consequat mollit pariatur ex.",
+      "cpu": {
+        "count": 4,
+        "speed": "ECONOMY",
+        "coresPerSocket": 4
+      },
+      "memoryGb": 4,
+      "network": {
+        "id": "d56f8403-73b0-45b0-a02d-fcc112caa018",
+        "privateIpv4": "10.0.0.1",
+        "vlanId": "1c1f6ab9-1e43-40a7-8efe-230d5830ef46",
+        "vlanName": "IT"
+      },
+      "createTime": "2018-03-21T18:13:04.000Z",
+      "deployed": false,
+      "started": false,
+      "state": "NORMAL"
+    },
+    {
+      "id": "571890ac-415b-4a91-a369-7ed873e8a54e",
+      "name": "OVIUM",
+      "description": "Sint sit aliqua dolore ex pariatur irure occaecat proident irure incididunt excepteur commodo. Anim excepteur ipsum exercitation anim est esse nisi irure veniam sit. Sint fugiat id laboris amet cillum. Cillum cillum enim ut excepteur ipsum cupidatat aliquip incididunt ipsum. Et exercitation sunt sit dolore Lorem officia aliqua esse ullamco enim. Incididunt officia ex ullamco duis quis. Excepteur enim minim officia officia eu pariatur dolor.",
+      "cpu": {
+        "count": 1,
+        "speed": "HIGHPERFORMANCE",
+        "coresPerSocket": 16
+      },
+      "memoryGb": 8,
+      "network": {
+        "id": "7cde5b12-e4e4-439d-9497-3ea1cc674f5d",
+        "privateIpv4": "10.0.0.7",
+        "vlanId": "b325c59f-1d08-4124-b72c-be94d9f45791",
+        "vlanName": "Marketing"
+      },
+      "createTime": "2019-11-13T15:53:21.000Z",
+      "deployed": false,
+      "started": false,
+      "state": "FAILED"
+    }
+  ]
+}

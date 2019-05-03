@@ -1,0 +1,237 @@
+{
+  "id": "org-708ac0e0-6c20-11e9-a923-1681be663d3e",
+  "name": "Fjord Lighting",
+  "server": [
+    {
+      "id": "9b0b1085-4c26-431e-afc3-e12b385629b0",
+      "name": "ZEDALIS",
+      "description": "Eu et aliqua sit voluptate ad ipsum laboris anim dolor. Veniam exercitation sit laborum et voluptate do. Sit est sunt aliquip veniam. Veniam adipisicing elit laboris enim ipsum quis labore Lorem pariatur eu veniam. Tempor dolor id dolore eu veniam laboris voluptate occaecat sit qui proident nulla ullamco. Consectetur elit officia qui ipsum duis occaecat consequat eu irure commodo.",
+      "cpu": {
+        "count": 2,
+        "speed": "ECONOMY",
+        "coresPerSocket": 16
+      },
+      "memoryGb": 4,
+      "network": {
+        "id": "954e7130-365c-4ecd-9388-008b24496d88",
+        "privateIpv4": "10.0.0.1",
+        "vlanId": "e10aa1fa-eb0a-4d69-84fb-1f66a7208554",
+        "vlanName": "Engineering"
+      },
+      "createTime": "2018-12-14T08:27:59.000Z",
+      "deployed": true,
+      "started": false,
+      "state": "PENDING_CHANGE"
+    },
+    {
+      "id": "01c425bd-a42e-4f12-bc28-dd9f5f0e121a",
+      "name": "FRANSCENE",
+      "description": "Nisi aliquip ullamco laboris aliquip deserunt quis reprehenderit anim officia in ad tempor sint. Labore veniam tempor est exercitation incididunt. Ex ad pariatur qui nulla ex enim tempor nostrud eiusmod veniam nisi aliqua officia. Commodo consectetur magna minim et laborum deserunt ipsum commodo. Cillum minim anim dolor voluptate consequat Lorem consequat ex reprehenderit dolor magna. Est non magna commodo do et officia ullamco ea do esse elit enim eiusmod. Officia aliquip cillum laboris voluptate quis ullamco nisi.",
+      "cpu": {
+        "count": 1,
+        "speed": "STANDARD",
+        "coresPerSocket": 4
+      },
+      "memoryGb": 8,
+      "network": {
+        "id": "86bc64a5-2572-4edf-abfb-eaee79ad0409",
+        "privateIpv4": "10.0.0.1",
+        "vlanId": "00dee9ec-bb66-40a0-ae25-0a2a6863f4ab",
+        "vlanName": "QA"
+      },
+      "createTime": "2019-04-16T20:44:20.000Z",
+      "deployed": false,
+      "started": true,
+      "state": "NORMAL"
+    },
+    {
+      "id": "a33c176b-8b8b-450c-92b6-cc6b750c2d58",
+      "name": "SYNKGEN",
+      "description": "Deserunt labore officia aliqua excepteur officia dolor. Voluptate nulla consequat esse culpa ea in ullamco eu deserunt consectetur voluptate amet. Proident deserunt pariatur minim ipsum officia laboris ad.",
+      "cpu": {
+        "count": 3,
+        "speed": "ECONOMY",
+        "coresPerSocket": 4
+      },
+      "memoryGb": 64,
+      "network": {
+        "id": "32295821-6080-48a9-b306-2e1bb8c43a9e",
+        "privateIpv4": "10.0.0.1",
+        "vlanId": "ba35e30b-1ecf-4261-a927-2ab483b86048",
+        "vlanName": "Sales"
+      },
+      "createTime": "2018-12-14T08:27:59.000Z",
+      "deployed": false,
+      "started": true,
+      "state": "FAILED"
+    },
+    {
+      "id": "c6faf917-4db8-415c-be62-b8e556419e37",
+      "name": "GEEKFARM",
+      "description": "Pariatur dolor laboris enim mollit mollit consequat consequat excepteur elit. Adipisicing id fugiat qui consectetur est deserunt deserunt incididunt qui Lorem occaecat excepteur cillum. Irure eu anim anim dolore ex sunt. Aliquip non dolor ullamco consequat labore Lorem sint ut mollit commodo ullamco veniam aute. Ipsum excepteur proident labore dolor labore commodo commodo enim ex tempor ullamco mollit.",
+      "cpu": {
+        "count": 4,
+        "speed": "ECONOMY",
+        "coresPerSocket": 4
+      },
+      "memoryGb": 4,
+      "network": {
+        "id": "dcd89075-1126-4768-a2fe-5cf518099af2",
+        "privateIpv4": "10.0.0.7",
+        "vlanId": "17ade39e-d6cf-4fa1-b04f-4264760de9ec",
+        "vlanName": "Engineering"
+      },
+      "createTime": "2019-03-19T14:51:32.000Z",
+      "deployed": true,
+      "started": true,
+      "state": "FAILED"
+    },
+    {
+      "id": "5a17839a-006a-4a37-9900-af35b54b5219",
+      "name": "ZOMBOID",
+      "description": "Ea aliquip duis labore nulla aliquip nisi cillum cillum esse dolor nostrud fugiat esse. Id incididunt adipisicing nisi esse fugiat duis et amet qui laboris aute sint non. Enim dolore qui ut duis tempor tempor.",
+      "cpu": {
+        "count": 4,
+        "speed": "STANDARD",
+        "coresPerSocket": 8
+      },
+      "memoryGb": 4,
+      "network": {
+        "id": "100ee8cc-2fa9-4fb5-8ee8-94d737487c84",
+        "privateIpv4": "10.0.0.3",
+        "vlanId": "ed1424ca-4843-4ca0-85a5-48b5f6b285a4",
+        "vlanName": "Sales"
+      },
+      "createTime": "2018-03-21T18:13:04.000Z",
+      "deployed": true,
+      "started": true,
+      "state": "FAILED"
+    },
+    {
+      "id": "baca0abd-7815-4b76-a813-d79b896f6812",
+      "name": "ISOLOGIA",
+      "description": "Nostrud minim exercitation reprehenderit nisi magna. Proident anim consectetur ad cillum laboris mollit nulla duis aliqua laboris incididunt. Reprehenderit occaecat duis ea dolor occaecat minim fugiat eu eu amet ex do. Aliquip sunt duis duis culpa laboris aute amet officia irure culpa in nostrud ad.",
+      "cpu": {
+        "count": 1,
+        "speed": "STANDARD",
+        "coresPerSocket": 4
+      },
+      "memoryGb": 8,
+      "network": {
+        "id": "01648618-c2ca-421e-867a-dd20db7717d8",
+        "privateIpv4": "10.0.0.5",
+        "vlanId": "8b0b49a4-047f-4aa2-87d0-4034b3e1c4db",
+        "vlanName": "QA"
+      },
+      "createTime": "2018-03-21T18:13:04.000Z",
+      "deployed": true,
+      "started": true,
+      "state": "NORMAL"
+    },
+    {
+      "id": "e32c3af1-b44a-404f-8c9e-ebda0b9b7663",
+      "name": "TWIGGERY",
+      "description": "Cillum qui incididunt occaecat tempor laboris voluptate dolore. Enim non velit officia irure eu commodo enim irure sint anim ipsum incididunt. Sunt ex irure Lorem voluptate proident occaecat et exercitation ea incididunt aute adipisicing exercitation esse. Proident mollit anim dolore deserunt dolore sunt deserunt nulla et aute.",
+      "cpu": {
+        "count": 1,
+        "speed": "HIGHPERFORMANCE",
+        "coresPerSocket": 4
+      },
+      "memoryGb": 16,
+      "network": {
+        "id": "1309fbdc-d6e2-42af-b72b-4d28a9f30d54",
+        "privateIpv4": "10.0.0.1",
+        "vlanId": "0adef28b-3e21-483b-a352-1211b027408c",
+        "vlanName": "QA"
+      },
+      "createTime": "2018-03-21T18:13:04.000Z",
+      "deployed": false,
+      "started": false,
+      "state": "FAILED"
+    },
+    {
+      "id": "297df4f7-bab8-4cd2-8e38-2880b9ceb8b7",
+      "name": "ISBOL",
+      "description": "Reprehenderit enim sit sint irure deserunt. Adipisicing id est laborum commodo elit dolore. Cillum do laboris dolore veniam id voluptate voluptate minim aliqua sunt ut dolore deserunt. Cillum nisi pariatur adipisicing voluptate fugiat commodo consectetur ullamco labore cupidatat sunt fugiat eu est.",
+      "cpu": {
+        "count": 3,
+        "speed": "HIGHPERFORMANCE",
+        "coresPerSocket": 8
+      },
+      "memoryGb": 64,
+      "network": {
+        "id": "7ef59b28-0677-4f99-91a3-3bd69ee066ba",
+        "privateIpv4": "10.0.0.6",
+        "vlanId": "88a53fc9-8a28-4268-b778-0e33c45bd4c3",
+        "vlanName": "Engineering"
+      },
+      "createTime": "2018-03-21T18:13:04.000Z",
+      "deployed": false,
+      "started": true,
+      "state": "NORMAL"
+    },
+    {
+      "id": "1ca31ce2-4c78-48db-9553-47bbdc2c55ed",
+      "name": "IRACK",
+      "description": "Minim nisi non nisi officia est elit nisi minim quis enim enim proident nulla est. Reprehenderit velit consequat nostrud commodo laborum amet et laborum aliquip cupidatat fugiat id cupidatat. Mollit ut officia incididunt est commodo dolor ad exercitation est elit. Minim labore ex aliquip et consectetur culpa ex sit Lorem est nulla non sit quis. Nostrud veniam enim laboris esse fugiat id et ea laborum aliquip ipsum in consectetur. Eiusmod est ipsum proident excepteur velit irure laborum proident eiusmod tempor exercitation.",
+      "cpu": {
+        "count": 2,
+        "speed": "STANDARD",
+        "coresPerSocket": 8
+      },
+      "memoryGb": 4,
+      "network": {
+        "id": "e02ef06e-3f9c-4992-80fb-ad82eecacd66",
+        "privateIpv4": "10.0.0.1",
+        "vlanId": "7677c10c-f7f0-46cf-8e85-5741866c777e",
+        "vlanName": "QA"
+      },
+      "createTime": "2019-04-30T12:48:55.000Z",
+      "deployed": true,
+      "started": true,
+      "state": "FAILED"
+    },
+    {
+      "id": "3455604e-1c60-4316-93f8-d82d9afc2881",
+      "name": "GENMEX",
+      "description": "Non nulla do nostrud officia commodo do ipsum. Exercitation culpa et dolore amet magna fugiat quis deserunt pariatur eiusmod pariatur anim. Laborum fugiat eu officia proident nulla deserunt nulla aute laboris culpa occaecat. Qui sit et anim commodo cillum eiusmod fugiat officia commodo consectetur.",
+      "cpu": {
+        "count": 3,
+        "speed": "HIGHPERFORMANCE",
+        "coresPerSocket": 4
+      },
+      "memoryGb": 64,
+      "network": {
+        "id": "b9c75e53-fbc2-4860-8c8d-cbd49f393501",
+        "privateIpv4": "10.0.0.7",
+        "vlanId": "478c506c-4630-4681-a94e-e5590d0dc7af",
+        "vlanName": "QA"
+      },
+      "createTime": "2018-03-13T10:16:23.000Z",
+      "deployed": false,
+      "started": false,
+      "state": "PENDING_CHANGE"
+    },
+    {
+      "id": "1d59087b-6ad5-4dd2-ba14-2689bc3831ed",
+      "name": "STREZZO",
+      "description": "Consectetur laboris in voluptate et amet Lorem sint dolor nostrud minim laborum labore sint. Aute laborum voluptate eiusmod ea non est Lorem deserunt non aute ad mollit. Laboris fugiat reprehenderit pariatur eiusmod eu adipisicing qui cillum ipsum culpa amet magna est. Fugiat quis ea anim adipisicing. Elit consequat tempor magna commodo et est laboris sit ullamco dolor non non ipsum. Sint nisi duis quis minim incididunt esse aute. Officia pariatur commodo ea cillum ullamco sit eiusmod dolor anim.",
+      "cpu": {
+        "count": 1,
+        "speed": "HIGHPERFORMANCE",
+        "coresPerSocket": 8
+      },
+      "memoryGb": 64,
+      "network": {
+        "id": "b231e728-0ad8-4b9b-b824-fcbebb867677",
+        "privateIpv4": "10.0.0.1",
+        "vlanId": "3b14d2e9-3eed-4543-8738-094f1da36654",
+        "vlanName": "QA"
+      },
+      "createTime": "2019-04-16T20:44:20.000Z",
+      "deployed": true,
+      "started": true,
+      "state": "PENDING_CHANGE"
+    }
+  ]
+}

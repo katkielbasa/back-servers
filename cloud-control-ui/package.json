@@ -1,0 +1,14 @@
+{
+  "name": "cloud-control-ui",
+  "version": "1.0.0",
+  "description": "Cloud Control UI for Managing Servers",
+  "main": "index.js",
+  "scripts": {},
+  "author": "James O'Leary",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "1.18.3",
+    "express": "4.16.4",
+    "express-json-validator-middleware": "2.0.0"
+  }
+}

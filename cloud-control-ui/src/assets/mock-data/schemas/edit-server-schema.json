@@ -1,0 +1,89 @@
+{
+    "type": "object",
+    "required": [ "name", "description", "cpu", "memoryGb", "network", "createTime", "deployed", "started", "state" ],
+    "properties": {
+        "id": {
+            "type": "string",
+            "format": "uuid",
+            "minLength": 36,
+            "maxLength": 36
+        },
+        "name": {
+            "type": "string",
+            "minLength": 3,
+            "maxLength": 20
+        },
+        "description": {
+            "type": "string",
+            "minLength": 3,
+            "maxLength": 300
+        },
+        "cpu": {
+            "type": "object",
+            "required": [ "count", "speed", "coresPerSocket" ],
+            "properties": {
+                "count": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 64
+                },
+                "speed": {
+                    "type": "string",
+                    "enum": [ "ECONOMY", "STANDARD", "HIGHPERFORMANCE" ]
+                },
+                "coresPerSocket": {
+                    "type": "integer",
+                    "minimum": 2,
+                    "maximum": 64,
+                    "multipleOf": 2
+                }
+            }
+        },
+        "memoryGb": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 64
+        },
+        "network": {
+            "type": "object",
+            "required": [ "id", "privateIpv4", "vlanId", "vlanName" ],
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "format": "uuid",
+                    "minLength": 36,
+                    "maxLength": 36
+                },
+                "privateIpv4": {
+                    "type": "string",
+                    "format": "ipv4"
+                },
+                "vlanId": {
+                    "type": "string",
+                    "format": "uuid",
+                    "minLength": 36,
+                    "maxLength": 36
+                },
+                "vlanName": {
+                    "type": "string",
+                    "minLength": 3,
+                    "maxLength": 20
+                }
+            }
+        },
+        "createTime": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "deployed": {
+            "type": "boolean"
+        },
+        "started": {
+            "type": "boolean"
+        },
+        "state": {
+            "type": "string",
+            "enum": [ "NORMAL", "FAILED", "PENDING_CHANGE" ]
+        }
+    }
+}
