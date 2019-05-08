@@ -1,15 +1,15 @@
-const cavespaceExplorationOrganization = require('./organizations/cavespaceExploration');
-const midnightIntelligenceOrganization = require('./organizations/midnightIntelligence');
-const fjordLightingOrganization = require('./organizations/fjordLighting');
+const cavespaceExplorationOrganization = require('../../assets/organizations/cavespaceExploration');
+const midnightIntelligenceOrganization = require('../../assets/organizations/midnightIntelligence');
+const fjordLightingOrganization = require('../../assets/organizations/fjordLighting');
 
 const allOrganizations = [ cavespaceExplorationOrganization, midnightIntelligenceOrganization, fjordLightingOrganization ];
 
 
 module.exports = {
-    getAllOrganizations: function () {
+    getAllOrganizations: () => {
         return allOrganizations;
     },
-    getServer: function ( orgId, serverId ) {
+    getServer: ( orgId, serverId ) => {
         const result = allOrganizations.filter(organization => organization.id.toLowerCase() === orgId);
         const organization = result[ 0 ];
 
@@ -20,21 +20,21 @@ module.exports = {
         return allOrganizations.filter(organization => organization.id.toLowerCase() === orgId.toLowerCase());
     }
     ,
-    removeServer: function ( organization, serverId ) {
+    removeServer: ( organization, serverId ) => {
         return organization.server.filter(server => server.id !== serverId);
     }
     ,
-    sendErrorReponse: function ( response, statusCode, message ) {
+    sendErrorReponse: ( response, statusCode, message ) => {
         return response.status(statusCode).json({message: message});
     }
     ,
-    serverDoesNotExistsForOrganization: function ( orgId, serverId ) {
-        const organizations = this.getOrganization(orgId);
+    serverDoesNotExistsForOrganization: ( orgId, serverId ) => {
+        const organizations = allOrganizations.filter(organization => organization.id.toLowerCase() === orgId.toLowerCase());
 
         return (organizations.length === 0) || organizations[ 0 ].server.filter(server => server.id === serverId).length <= 0;
     }
     ,
-    buildListServersResponsePayload: function ( organization ) {
+    buildListServersResponsePayload: ( organization ) => {
         return {
             organizationId: organization.id,
             organizationName: organization.name,
@@ -43,7 +43,7 @@ module.exports = {
         };
     }
     ,
-    buildServer: function ( request ) {
+    buildServer: ( request ) => {
         return {
             id: request.body.id,
             name: request.body.name,
@@ -63,7 +63,7 @@ module.exports = {
             createTime: request.body.createTime,
             deployed: request.body.deployed,
             started: request.body.started,
-            state: request.body.started
+            state: request.body.state
         };
     }
 };

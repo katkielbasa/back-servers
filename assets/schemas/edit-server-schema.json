@@ -1,6 +1,6 @@
 {
     "type": "object",
-    "required": [ "id", "name", "description", "cpu", "memoryGb", "network", "createTime", "deployed", "started", "state" ],
+    "required": [ "name", "description", "cpu", "memoryGb", "network", "createTime", "deployed", "started", "state" ],
     "properties": {
         "id": {
             "type": "string",
@@ -83,7 +83,7 @@
         },
         "state": {
             "type": "string",
-            "enum": [ "NORMAL", "FAILED", "PENDING_CHANGE" ]
+            "enum": [ "NORMAL", "FAILED", "MAINTENANCE" ]
         }
     }
 }

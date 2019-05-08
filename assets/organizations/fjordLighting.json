@@ -21,7 +21,7 @@
       "createTime": "2018-12-14T08:27:59.000Z",
       "deployed": true,
       "started": false,
-      "state": "PENDING_CHANGE"
+      "state": "MAINTENANCE"
     },
     {
       "id": "01c425bd-a42e-4f12-bc28-dd9f5f0e121a",
@@ -210,7 +210,7 @@
       "createTime": "2018-03-13T10:16:23.000Z",
       "deployed": false,
       "started": false,
-      "state": "PENDING_CHANGE"
+      "state": "MAINTENANCE"
     },
     {
       "id": "1d59087b-6ad5-4dd2-ba14-2689bc3831ed",
@@ -231,7 +231,7 @@
       "createTime": "2019-04-16T20:44:20.000Z",
       "deployed": true,
       "started": true,
-      "state": "PENDING_CHANGE"
+      "state": "MAINTENANCE"
     }
   ]
 }

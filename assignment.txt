@@ -1,0 +1,48 @@
+Coding Challenge
+
+1) Introduction - CloudControl
+"CloudControl" provides a Cloud solution that enables organizations to setup and maintain servers that they can deploy their own applications onto.
+
+Currently API using JSON payloads must be used to create and maintain servers. These would then be submitted by http requests, the usual GET/POST/PUT/DELETE HTTP methods being used as appropriate.
+
+
+2) A Client Prototype - The Challenge
+As well as supplying the API, "CloudControl" is keen to provide a friendly user-experience for on-line users. The want us to construct a prototype browser-based client application that will provide all the functionality of the API through a browser-based application. 
+
+The initial version of the application must allow a user to choose an organization and then:
+
+a) Create a new server for the organization,
+b) List summary details of available servers for the organization
+c) Edit the attributes of a server for the organization
+d) Delete a server for the organization
+
+Feedback from users is that when viewing a list of their servers the details most useful to them would be:
+Server Name 
+Description
+Create time
+Number of CPUs
+Amount of Memory
+Private Ipv4
+Deployed 
+Started
+State (can be RUNNING/FAILED/MAINTENANCE)
+
+
+3) Requirements
+As "CloudControl" has existing experience with Angular 7, they would like that framework to be used to build the application. There is no real preference over which UX toolkits are used e.g Material, Bootstrap etc. The application needs to work on modern browsers (Chrome, Firefox, Edge)
+
+The application must present an easily navigable UX to the user. If errors occur during processing then these must be communicated clearly to the user. Confirmation of successful actions should also be shown clearly.
+
+To help us with building the prototype, a mock back-end server has been constructed. This will accept all the API calls that can be made in the real system, and will return mock data. This has been provided as a zip file, with details of how to run it included in a README file. Please feel free to add folders etc. to the server as required. 
+
+
+4) Deliverables
+The following deliverables are required:
+
+a) Source code for the application
+b) A runnable Production Build of the application, supplied with instructions on how to deploy and run.
+c) Unit tests covering at least the Create Server scenario
+d) An example e2e test
+e) Short document describing application architecture and any other notes
+
+Additionally, "CloudControl" would be interested in other features such as translation, authentication, accessibility, example of responsive design. These could either be implemented, or described in the supporting documentation.

@@ -21,7 +21,7 @@
       "createTime": "2019-11-13T15:53:21.000Z",
       "deployed": true,
       "started": true,
-      "state": "PENDING_CHANGE"
+      "state": "MAINTENANCE"
     },
     {
       "id": "840ea23d-b5ab-4874-ad49-ebfd1733cca6",
@@ -105,7 +105,7 @@
       "createTime": "2018-03-21T18:13:04.000Z",
       "deployed": true,
       "started": true,
-      "state": "PENDING_CHANGE"
+      "state": "MAINTENANCE"
     },
     {
       "id": "40e3457e-04b8-4d05-8287-f1e8563d0bb5",
@@ -126,7 +126,7 @@
       "createTime": "2019-03-19T14:51:32.000Z",
       "deployed": false,
       "started": false,
-      "state": "PENDING_CHANGE"
+      "state": "MAINTENANCE"
     },
     {
       "id": "73dd5907-3257-4982-b114-f30865a0cb1d",
@@ -210,7 +210,7 @@
       "createTime": "2019-04-30T12:48:55.000Z",
       "deployed": false,
       "started": false,
-      "state": "PENDING_CHANGE"
+      "state": "MAINTENANCE"
     },
     {
       "id": "fdac7a31-fa57-4d4b-85b1-bbe37fd0d6ce",
@@ -273,7 +273,7 @@
       "createTime": "2018-12-11T15:18:50.000Z",
       "deployed": false,
       "started": true,
-      "state": "PENDING_CHANGE"
+      "state": "MAINTENANCE"
     },
     {
       "id": "f2552c30-d1c5-4c99-9510-a210d6c9db0f",
@@ -315,7 +315,7 @@
       "createTime": "2015-05-13T15:53:21.000Z",
       "deployed": false,
       "started": false,
-      "state": "PENDING_CHANGE"
+      "state": "MAINTENANCE"
     },
     {
       "id": "81d65671-29a1-4a63-8227-7c8af28c4c04",
@@ -357,7 +357,7 @@
       "createTime": "2018-03-21T18:13:04.000Z",
       "deployed": true,
       "started": true,
-      "state": "PENDING_CHANGE"
+      "state": "MAINTENANCE"
     },
     {
       "id": "19becb23-e1d3-4d0f-b95f-9dc9ccd2268b",
@@ -546,7 +546,7 @@
       "createTime": "2016-11-13T15:53:21.000Z",
       "deployed": true,
       "started": false,
-      "state": "PENDING_CHANGE"
+      "state": "MAINTENANCE"
     },
     {
       "id": "4995133d-6ae3-45c6-a58a-c970a571a979",
@@ -609,7 +609,7 @@
       "createTime": "2019-03-22T12:39:49.000Z",
       "deployed": false,
       "started": false,
-      "state": "PENDING_CHANGE"
+      "state": "MAINTENANCE"
     },
     {
       "id": "9b10ee61-b969-4f7b-b22d-92f46e44c7fd",
@@ -651,7 +651,7 @@
       "createTime": "2018-03-21T18:13:04.000Z",
       "deployed": true,
       "started": true,
-      "state": "PENDING_CHANGE"
+      "state": "MAINTENANCE"
     },
     {
       "id": "bfc91ec4-9199-4b5f-820f-f9a3a6db6ab8",

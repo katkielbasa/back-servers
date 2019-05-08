@@ -2,9 +2,9 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const port = 3040;
 
-const addServerJsonSchema = require('./schemas/add-server-schema');
-const editServerJsonSchema = require('./schemas/edit-server-schema');
-const utils = require('./utils');
+const addServerJsonSchema = require('../assets/schemas/add-server-schema');
+const editServerJsonSchema = require('../assets/schemas/edit-server-schema');
+const utils = require('./utils/utils');
 
 
 const {Validator, ValidationError} = require('express-json-validator-middleware');
@@ -13,13 +13,17 @@ const validate = validator.validate;
 
 const app = express();
 app.use(bodyParser.json());
+// Import the library:
+var cors = require('cors');
+// Then use it before your routes are set up:
+app.use(cors());
 
-app.get('/', ( request, response ) => {
+app.get('/api', ( request, response ) => {
     console.info('Attempting to retrieve ALL organizations.');
     response.json({organizations: utils.getAllOrganizations()});
 });
 
-app.get('/:orgId/server', ( request, response ) => {
+app.get('/api/:orgId/server', ( request, response ) => {
     const orgId = request.params[ 'orgId' ].toLowerCase();
     const organizationNotFoundErrorMessage = 'Organization id ' + orgId + ' not found.';
 
@@ -35,7 +39,7 @@ app.get('/:orgId/server', ( request, response ) => {
     return response.json(utils.buildListServersResponsePayload(organization));
 });
 
-app.get('/:orgId/server/:serverId', ( request, response ) => {
+app.get('/api/:orgId/server/:serverId', ( request, response ) => {
     const orgId = request.params[ 'orgId' ].toLowerCase();
     const serverId = request.params[ 'serverId' ].toLowerCase();
     const serverNotFoundErrorMessage = 'Server id ' + serverId + ' for Organization id ' + orgId + ' not found.';
@@ -49,15 +53,14 @@ app.get('/:orgId/server/:serverId', ( request, response ) => {
     const result = utils.getServer(orgId, serverId);
     const server = result[ 0 ];
 
-    return response.json({server: server});
+    return response.json(server);
 });
 
-
-app.delete('/:orgId/server/:serverId', ( request, response ) => {
+app.delete('/api/:orgId/server/:serverId', ( request, response ) => {
     const orgId = request.params[ 'orgId' ].toLowerCase();
     const serverId = request.params[ 'serverId' ].toLowerCase();
     const serverNotDeletedMessage = 'Unexpected error Server Id ' + serverId + ' for Organization Id ' + orgId + ' Not Deleted';
-    const serverNotFoundErrorMessage = 'Server id ' + serverId + ' for Organization id ' + orgId + ' not found';
+    const serverNotFoundErrorMessage = 'Server id ' + serverId + ' for Organization id ' + orgId + ' not found.';
 
     console.info('Attempting to delete server ' + serverId + ' for orgId ' + orgId + '.');
 
@@ -76,7 +79,7 @@ app.delete('/:orgId/server/:serverId', ( request, response ) => {
     return response.json({message: "Server Deleted"});
 });
 
-app.delete('/:orgId/server', ( request, response ) => {
+app.delete('/api/:orgId/server', ( request, response ) => {
     const orgId = request.params[ 'orgId' ].toLowerCase();
     const organizationNotFoundErrorMessage = 'Organization id ' + orgId + ' not found.';
 
@@ -93,8 +96,7 @@ app.delete('/:orgId/server', ( request, response ) => {
     return response.json({message: 'All servers deleted.'});
 });
 
-
-app.post('/:orgId/server', validate({body: addServerJsonSchema}), ( request, response ) => {
+app.post('/api/:orgId/server', validate({body: addServerJsonSchema}), ( request, response ) => {
     const orgId = request.params[ 'orgId' ].toLowerCase();
     const organizationNotFoundErrorMessage = 'Organization id ' + orgId + ' not found.';
 
@@ -116,11 +118,10 @@ app.post('/:orgId/server', validate({body: addServerJsonSchema}), ( request, res
     return response.json({message: 'Server added.'});
 });
 
-
-app.post('/:orgId/server/:serverId', validate({body: editServerJsonSchema}), ( request, response ) => {
+app.post('/api/:orgId/server/:serverId', validate({body: editServerJsonSchema}), ( request, response ) => {
     const orgId = request.params[ 'orgId' ].toLowerCase();
     const serverId = request.params[ 'serverId' ].toLowerCase();
-    const serverNotFoundErrorMessage = 'Server id ' + serverId + ' for Organization id ' + orgId + ' not found';
+    const serverNotFoundErrorMessage = 'Server id ' + serverId + ' for Organization id ' + orgId + ' not found.';
 
     console.info('Attempting to edit server id ' + serverId + ' with payload: ' + request.body);
 
@@ -150,6 +151,9 @@ app.post('/:orgId/server/:serverId', validate({body: editServerJsonSchema}), ( r
     return response.json({message: 'Server edited.'});
 });
 
+app.all('*', ( request, response ) => {
+    return response.status(404).json({message: 'API resource requested not found.'})
+});
 
 // Error handler for validation errors
 app.use(( err, req, res, next ) => {
@@ -161,6 +165,6 @@ app.use(( err, req, res, next ) => {
     } // pass error on if not a validation error
 });
 
-app.listen(port, function () {
-    console.info('backend-server for cloud-control-ui app is running on port: ',port);
+app.listen(port, () => {
+    console.info('backend-server for cloud-control-ui app is running on port: ', port);
 });
